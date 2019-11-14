@@ -76,12 +76,12 @@ function unFlipCards(){
 
 
 //arragement for ramdoms cards 
-//(function mixed(){
-  //  cards.forEach(card => {
-    //    let randomPos = Math.floor(Math.random() * 16 );
-      //  card.style.order = randomPos;
-   // });
-//})();
+(function mixed(){
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 16 );
+      card.style.order = randomPos;
+   });
+})();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 document.querySelector('[data-binding="point"]').innerHTML = pointCounter;
